@@ -10,4 +10,4 @@ Building rails docker image is hard in China, this project makes it easy.
 * Add necessary packages, for example: `git`
 
 ## How to use
-`docker pull registry.cn-hangzhou.aliyuncs.com/ruilisi/rails:1.0.0`
+`docker pull registry.cn-hangzhou.aliyuncs.com/ruilisi/rails:1.0.1`
