@@ -1,6 +1,5 @@
 FROM ruby:2.7.2-alpine3.12
-RUN echo "http://mirrors.ustc.edu.cn/alpine/v3.12/main/" > /etc/apk/repositories && \
-    echo "http://mirrors.ustc.edu.cn/alpine/v3.12/community/" >> /etc/apk/repositories
+RUN printf "http://mirrors.ustc.edu.cn/alpine/v3.12/main/\nhttp://mirrors.ustc.edu.cn/alpine/v3.12/community/\n" > /etc/apk/repositories
 WORKDIR /usr/src/app
 RUN apk update && \
     gem install bundler:2.1.4 && \
